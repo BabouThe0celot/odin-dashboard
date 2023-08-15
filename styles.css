@@ -1,24 +1,66 @@
 body {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
+  
 }
 
+.main{
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+}
+
+.sidenav{
+  color: white;
+  text-align: center;
+  background-color: navy;
+  grid-row: 1 / 3;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav-container{
+margin-top: 20px;
+margin-bottom: 20px;
+}
 .header {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 150px;
-  box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 4px 2px -2px black;
   text-align: left;
+  font-size: 0.5em;
+  justify-content: space-between;
 }
 
 .holygrail-body {
   display: grid;
   grid-template-columns: 1fr 0.33fr;
   grid-gap: 1em;
-  width: 100%;
-  background-color: grey;
+  background-color: #f0f0f0;
   padding: 1em 1em 1em 1em;
 
 }
@@ -39,7 +81,7 @@ body {
   color: Black;
   font-size: 1em;
   text-align: center;
-  border-left: 0.5em solid gold;
+  border-left: 0.5em solid #ff6c2f;
   border-radius: 1em;
 }
 
@@ -66,14 +108,14 @@ body {
 .footer {
   width: 100%;
   height: 60px;
-  background: grey;
+  
 }
 
 
 
 
 /* -- NAV -- */
-.sidenav {
+/* .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -136,4 +178,4 @@ body {
       width: 100%;
     }
   }
-}
+} */

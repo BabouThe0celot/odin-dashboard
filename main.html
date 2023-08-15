@@ -10,31 +10,41 @@
 </head>
 
 <body>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-    <div id="main">
+    <div class="main">
+        <div id="mySidenav" class="sidenav">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+            <h1>Dashboard</h1>
+            <div class="sidenav-container">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Messages</a>
+                <a href="#">History</a>
+                <a href="#">Tasks</a>
+                <a href="#">Communities</a>
+            </div>
+            <div class="sidenav-container">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
         <header class="header">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-            <h1>Your Dashboard</h1>
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+
             <div class="search-container">
                 <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-              </div>
-              <div class="button-container">
+            </div>
+            <div class="button-container">
                 <button class="new">New</button>
                 <button class="new">Upload</button>
                 <button class="new">Share</button>
-              </div>
+            </div>
         </header>
-        
+
         <div class="holygrail-body">
             <div class="content cards">
                 <a class="project">
@@ -42,31 +52,31 @@
                     <p> Lorem ipsum dolor </p>
                 </a>
 
-                
+
                 <a class="project">
                     <h3> Project Card </h3>
                     <p> Lorem ipsum dolor </p>
                 </a>
 
-                
+
                 <a class="project">
                     <h3> Project Card </h3>
                     <p> Lorem ipsum dolor </p>
                 </a>
 
-                
+
                 <a class="project">
                     <h3> Project Card </h3>
                     <p> Lorem ipsum dolor </p>
                 </a>
 
-                
+
                 <a class="project">
                     <h3> Project Card </h3>
                     <p> Lorem ipsum dolor </p>
                 </a>
 
-                
+
                 <a class="project">
                     <h3> Project Card </h3>
                     <p> Lorem ipsum dolor </p>
@@ -76,7 +86,7 @@
             <div class="content aside announcements">
                 <a class="announcements">
                     <h3>Announcements</h3>
-                   a <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    a <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </a>
                 <a class="announcements">
                     <h3>Announcements</h3>
@@ -103,8 +113,9 @@
 
             </div>
 
+            <footer class="footer"></footer>
         </div>
-        <footer class="footer"></footer>
+
 </body>
 
 </html>
